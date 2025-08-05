@@ -3,22 +3,24 @@
     <head>
         <title>Todo List APP test</title>
        <style>
+
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #121212;
-        color: #e0e0e0;
+        background: linear-gradient(135deg, #0d021f, #1a0134, #3a015c);
+        color: #e5d6f0;
         margin: 0;
         padding: 0;
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: background 0.3s ease, color 0.3s ease;
+        font-style: italic;
     }
 
     h1 {
-        background: linear-gradient(135deg, #ff6ec4, #7873f5);
+        background: linear-gradient(to right, #da22ff, #9733ee);
         color: white;
         margin: 0;
         padding: 20px;
         text-align: center;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 20px rgba(154, 89, 255, 0.5);
         text-transform: uppercase;
         letter-spacing: 2px;
         transition: all 0.4s ease;
@@ -30,101 +32,19 @@
     }
 
     ul li {
-        background: #1e1e1e;
-        border: 1px solid #333;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
         margin-bottom: 15px;
         padding: 15px 20px;
         position: relative;
         border-radius: 8px;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 
-    ul li:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
-    }
-
-    ul li a {
-        color: #ddd;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
-
-    ul li a:hover {
-        color: #ff6ec4;
-    }
-
-    .delete-btn {
-        color: #ff4d4d;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        transition: color 0.3s ease;
-    }
-
-    .edit-btn {
-        color: #ffc107;
-        position: absolute;
-        right: 40px;
-        top: 10px;
-        transition: color 0.3s ease;
-    }
-
-    form {
-        background: #1e1e1e;
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
-        transition: all 0.3s ease;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 10px;
-        font-weight: bold;
-        color: #ccc;
-    }
-
-    input[type="text"] {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #444;
-        border-radius: 6px;
-        background-color: #2c2c2c;
-        color: #fff;
-        transition: border-color 0.3s ease;
-    }
-
-    input[type="text"]:focus {
-        border-color: #ff6ec4;
-        outline: none;
-    }
-
-    input[type="submit"] {
-        background: linear-gradient(135deg, #ff6ec4, #7873f5);
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        border-radius: 6px;
-        font-weight: bold;
-        transition: background 0.3s ease, transform 0.3s ease;
-    }
-
-    input[type="submit"]:hover {
-        background: linear-gradient(135deg, #7873f5, #ff6ec4);
-        transform: scale(1.05);
-    }
-</style>
 
     </head>
 
     <body>
-        <h1>SRISHTI TO-DOO LIST</h1>
+        <h1>SRISHTI TO-DO LIST</h1>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
